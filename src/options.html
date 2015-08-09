@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Recess</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <form id="options">
+      <input type="checkbox" name="eyes" checked="true">
+      Remind me to rest my eyes every 20 minutes.
+      <br>
+      <br>
+      <input type="checkbox" name="legs" checked="true">
+      Remind me to leave my desk every hour.
+      <br>
+      <br>
+      Notify me at: <span id="start">0</span> minutes pass the hour.
+      <br>
+      0 <input name="start" type="range" min="0" max="55" step="5" value="0"> 55
+    </form>
+    <script src="./store.min.js"></script>
+    <script src="./options.js"></script>
+  </body>
+</html>

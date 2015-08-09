@@ -1,0 +1,21 @@
+{
+  "name": "Recess",
+  "version": "1.0",
+  "description":
+    "Give yourself a recess.",
+  "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"},
+  "permissions": [
+    "notifications",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background": { "scripts": ["background.js"] },
+  "manifest_version": 2,
+
+  "web_accessible_resources": [
+    "icons/48.png"
+  ]
+}
