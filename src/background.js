@@ -18,13 +18,13 @@ if (window.Notification) {
     ], function(items) {
       var curMin = new Date().getMinutes();
       var interval = +items.interval;
+      var times = [interval, (interval + 20) % 60, (interval + 40) % 60];
       // show('icons/128.png', items.interval);
 
-      if (curMin != interval) {
+      if (times.indexOf(curMin) === -1) {
         notified = false;
       }
       if (items.eyes) {
-        times = [interval, (interval + 20) % 60, (interval + 40) % 60];
         if (times.indexOf(curMin) > -1 && !notified) {
           show('icons/128.png', "It's time to rest your eyes!");
         }
@@ -34,7 +34,7 @@ if (window.Notification) {
           show('icons/128.png', 'Get up from your desk!');
         }
       }
-      if (curMin === interval) {
+      if (times.indexOf(curMin) > -1) {
         notified = true;
       }
     });
