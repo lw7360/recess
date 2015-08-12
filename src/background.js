@@ -11,7 +11,7 @@ function show(imgName, text) {
 if (window.Notification) {
   var notified = false;
   setInterval(function() {
-    chrome.storage.sync.get([
+    chrome.storage.local.get([
       'eyes',
       'legs',
       'interval'

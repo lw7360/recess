@@ -8,7 +8,7 @@ function saveOptions() {
   store.set('legs', options.legs.checked);
   store.set('start', options.start.value);
   document.getElementById('start').innerHTML = store.get('start');
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     'eyes': store.get('eyes'),
     'legs': store.get('legs'),
     'interval': store.get('start')
