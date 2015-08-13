@@ -2,7 +2,7 @@
   "name": "Recess",
   "version": "1.0",
   "description":
-    "Give yourself a recess.",
+    "It's time for Recess.",
   "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"},
   "permissions": [
     "notifications",
