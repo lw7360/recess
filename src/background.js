@@ -28,12 +28,12 @@ if (window.Notification) {
       }
       if (items.eyes) {
         if (times.indexOf(curMin) > -1 && !notified) {
-          show('icons/128.png', "It's time to rest your eyes!");
+          show('icons/eye.png', "It's time to rest your eyes!");
         }
       }
       if (items.legs) {
         if (curMin === interval && !notified) {
-          show('icons/128.png', 'Get up from your desk!');
+          show('icons/chair.png', 'Get up from your desk!');
         }
       }
       if (times.indexOf(curMin) > -1) {
